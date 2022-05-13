@@ -50,7 +50,7 @@ if __name__ == "__main__" :
 
         print(red + "! Usage: " + endc + "python3 affinecipher.py <type> <string> <a> <b>")
         print('''
-        - type    : {e: encryption, d: decryption}
+        - type    : {enc: encryption, dec: decryption}
         - string  : the text you want to enrypt or decrypt
         - a       : the first operand of the key
         - b       : the second operand of the key
@@ -68,9 +68,9 @@ if __name__ == "__main__" :
         print(red + 'Error: ' + endc + 'Operands must be numbers not strings')
         exit()
 
-    if args[1] == "e" :
+    if args[1] == "enc" :
         print(encryption(args[2], a, b))
-    elif args[1] == "d" :
+    elif args[1] == "dec" :
         print(decryption(args[2], a, b))
     else :
         print(red + "!Error: " + endc + "Unvalid type of operation")

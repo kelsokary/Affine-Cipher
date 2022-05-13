@@ -12,8 +12,10 @@ The affine cipher is a type of monoalphabetic substitution cipher, where each le
 ```
  ! Usage: python3 affinecipher.py <type> <string> <a> <b>
   
-* type    : {e: encryption, d: decryption}
+* type    : {enc: encryption, dec: decryption}
 * string  : the text you want to enrypt or decrypt
 * a       : the first operand of the key
 * b       : the second operand of the key
 ```
+## example 
+  python3 affinecipher.py enc kompo 10 12
